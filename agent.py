@@ -1,4 +1,5 @@
 import os
+import toml
 from typing import Literal
 import uuid
 from tavily import TavilyClient
@@ -10,6 +11,9 @@ from dotenv import load_dotenv
 import streamlit as st
 
 load_dotenv()
+config = toml.load(".streamlit/secrets.toml")
+os.environ["TAVILY_API_KEY"] = config["settings"]["TAVILY_API_KEY"]
+os.environ["ANTHROPIC_API_KEY"] = config["settings"]["ANTHROPIC_API_KEY"]
 
 tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
 

@@ -47,4 +47,4 @@ dist/
 *.db
 
 # Streamlit deployment
-.streamlit/config.toml
+.streamlit/secrets.toml
