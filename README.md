@@ -12,3 +12,7 @@ Internet Research Agent with Tavily DeepAgents, and Streamlit
 5. Run `source bin/activate` from project root to activate virtual environment.
 6. Run `poetry install` from virtual environment.
 7. Run `streamlit run agent.py` from virtual environment.
+
+## Demo
+
+https://research-agent-5x4g5ejee9vuxu5j3nfeyb.streamlit.app/
