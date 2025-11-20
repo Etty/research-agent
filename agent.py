@@ -16,6 +16,7 @@ os.environ["TAVILY_API_KEY"] = config["settings"]["TAVILY_API_KEY"]
 os.environ["ANTHROPIC_API_KEY"] = config["settings"]["ANTHROPIC_API_KEY"]
 
 tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
+st.set_page_config(page_title="Internet Research Helper")
 
 
 def internet_search(
