@@ -1,0 +1,24 @@
+[project]
+name = "research-agent"
+version = "1.0.0"
+description = "Internet Research Agent with Tavily DeepAgents, and Streamlit"
+authors = [
+    { name = "☆♫~Anastasiia Yermolik~♫☆", email = "vishnu96vishnu@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "deepagents (>=0.2.7,<0.3.0)",
+    "streamlit (>=1.51.0,<2.0.0)",
+    "pytest (>=9.0.1,<10.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+tavily-python = "^0.7.13"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
